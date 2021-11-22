@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script> 
+// Simple Calculator 
+
+// let firstValue = prompt("Entrer la 1ère valeur");
+
+// let operand = prompt("Entrer l'opérateur");
+
+// let secondValue = prompt("Entrer la 2ème valeur");
+
+
+
+// let sum = parseInt(firstValue) + parseInt(secondValue);
+// console.log(sum);
+// let substract = parseInt(firstValue) - parseInt(secondValue);
+// let multiplication = parseInt(firstValue) * parseInt(secondValue);
+// let division = parseInt(firstValue) / parseInt(secondValue);
+
+// if(operand === "+"){
+//     console.log(sum);
+// }else if(operand === "-"){ 
+//     console.log(subtract);
+// }else if(operand === "*"){
+//     console.log(multiplication);
+// }else if(operand === "/"){
+//     console.log(division);
+// }else{ 
+//     console.log("Ce n'est pas un opérateur valide, veuillez reéssayer..");
+
+// }
+
+// *******************************************
+
+// The price is right game 
+const player = prompt("Choisis ton nom de joueur");
+let choice = parseInt(prompt("Entre ta valeur"));
+
+const random = Math.floor(Math.random() * 100) + 1;
+
+while(choice != random){
+// demander au player de trouver le nombre choisis
+if(choice > random){ 
+    console.log("Votre valeur est supérieur au nombre");
+
+}else if(choice < random){
+    console.log("Votre valeur est inferieur au nombre ");
+}
+
+ choice = parseInt(prompt("Entre ta valeur"));
+
+// demander au joueur de reessayer
+}
+
+console.log(player + " à trouver le nombre ! ");
+// si il trouve le result lui notifier de la win
+
+
+
+
+
+</script>
+</body>
+</html>
